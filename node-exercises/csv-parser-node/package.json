@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "npx nodemon --exec babel-node src/app",
+    "dev-dummy-data": "npx nodemon --exec babel-node data/csv-response"
   },
   "author": "",
   "license": "ISC",
