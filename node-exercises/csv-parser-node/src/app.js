@@ -19,9 +19,7 @@ const app = http.createServer((req, res) => {
       return;
     }
 
-    readFile(body.trim(), (result) => {
-      console.log(result);
-    })
+    readFile(body.trim(), res);
   });
 });
 
