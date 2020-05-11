@@ -1,8 +1,9 @@
 const http = require('http');
+import { splitEnter } from './splitEnter'
 
-const readFile = (URL, res) => {
+const readFile = (URL, callback) => {
   http.get(URL, response => {
-    response.pipe(res);
+    response.pipe(new splitEnter()).pipe(res);
   });
 };
 
